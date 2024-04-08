@@ -1,0 +1,156 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+/* body */
+.calculator-body{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    background-color: #e2cba7;
+    height: 490px;
+    width: 310px;
+    border-radius: 30px 30px 15px 15px;
+
+}
+/* screen */
+#calculator-screen{
+    display: flex;
+    background-color: rgb(87, 9, 9);
+    width: 270px;
+    height: 55px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
+    align-items: center;
+    text-align: end;
+    color: red;
+    font-size: 20px;
+
+}
+
+
+
+
+/* logo*/
+.calculator-logo{
+    display: flex;
+    background-color: black;
+    width: 270px;
+    height: 40px;
+    border-bottom: 3px solid grey;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+.calculator-logo img{
+    margin-left: 40px;
+}
+
+.calculator-logo h1{
+    color: antiquewhite;
+    font-size: 17px;
+    margin-right: 15px;
+    
+}
+
+/* background */
+
+.calculator-background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 300px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+/* buttons */
+
+.buttons .button-row-one button,
+.buttons .button-row-two button,
+.buttons .button-row-three button,
+.buttons .button-row-four button{
+    height: 45px;
+    width: 45px;
+    margin-bottom: 10px;
+}
+
+.buttons .button-row-one #button-clear-entry,
+.buttons .button-row-two #button-eight,
+.buttons .button-row-three #button-five,
+.buttons .button-row-four #button-two,
+.buttons .button-row-five #button-decimal{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.buttons .button-row-one #button-percentage,
+.buttons .button-row-two #button-nine,
+.buttons .button-row-three #button-six,
+.buttons .button-row-four #button-three,
+.buttons .button-row-five #button-decimal{
+
+    margin-right: 10px;
+}
+
+.buttons .button-row-one button,
+.buttons .button-row-two #button-multiplication,
+.buttons .button-row-three #button-subtraction,
+.buttons .button-row-four #button-addition{
+    background-color: #e2cba7;
+
+}
+
+.buttons .button-row-one #button-division,
+.buttons .button-row-two #button-multiplication,
+.buttons .button-row-three #button-subtraction,
+.buttons .button-row-four #button-addition,
+.buttons .button-row-five #button-decimal{
+   font-size: 30px;
+   vertical-align:bottom;
+}
+
+
+
+/* row-five */
+.buttons .button-row-five button{
+    height: 45px;
+    width: 75px;
+}
+
+.buttons .button-row-five #button-decimal,
+.buttons .button-row-one #button-division{
+    width: 45px;
+}
+
+.buttons .button-row-five #button-equals{
+    background-color: orange;
+}
+
+.buttons .button-row-one #button-clear{
+    height: 45px;
+    width: 105px;
+    background-color: crimson;
+}
+
+
+button{
+    font-size: 20px;
+}

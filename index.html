@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+<div class="calculator-container">
+    <div class="calculator-body">
+        <input id="calculator-screen" readonly>
+        <div class="calculator-logo">
+            <img src="" alt="test">
+            <h1>Datamath</h1>
+        </div>
+        <div class="calculator-background">
+            <div class=buttons id="buttons">
+                <div class="button-row-one">
+                    <button onclick="clearDisplay()" id="button-clear">Clear</button>
+                    <button onclick="clearEntry()" id="button-clear-entry">CE</button>
+                    <button onclick="appendToDisplay('/')" id="button-division">&divide;</button>
+                </div>
+                <div class="button-row-two">
+                    <button onclick="appendToDisplay('7')" id="button-seven">7</button>
+                    <button onclick="appendToDisplay('8')" id="button-eight">8</button>
+                    <button onclick="appendToDisplay('9')" id="button-nine">9</button>
+                    <button onclick="appendToDisplay('*')" id="button-multiplication">&times;</button>
+                </div>
+                <div class="button-row-three">
+                    <button onclick="appendToDisplay('4')" id="button-four">4</button>
+                    <button onclick="appendToDisplay('5')" id="button-five">5</button>
+                    <button onclick="appendToDisplay('6')" id="button-six">6</button>
+                    <button onclick="appendToDisplay('-')" id="button-subtraction">-</button>
+                </div>
+                <div class="button-row-four">
+                    <button onclick="appendToDisplay('1')" id="button-one">1</button>
+                    <button onclick="appendToDisplay('2')" id="button-two">2</button>
+                    <button onclick="appendToDisplay('3')" id="button-three">3</button>
+                    <button onclick="appendToDisplay('+')" id="button-addition">+</button>
+                </div>
+                <div class="button-row-five">
+                    <button onclick="appendToDisplay('0')" id="button-zero">0</button>
+                    <button onclick="appendToDisplay('.')" id="button-decimal">&middot;</button>
+                    <button onclick="appendToDisplay('=')" id="button-equals">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
