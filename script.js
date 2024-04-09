@@ -9,6 +9,18 @@ calculatorScreen.value = "0"
 
 function appendToDisplay(input){
     
+    
+    if((num2 !== "0" && num2 !== "0." && num2 !== "-0" && num2 !== "-0.") && operator !== ""){
+        if (input === "/" || input === "*" || input === "-" || input === "+"){
+            num1 = calculate(operator,num1,num2);
+            num2 = "0";
+            inNum1 = false
+            operator = input
+            return;
+
+        }
+    }
+    
     if(input === "-" && (num1 === "0" || num1 === "0.")){
         if(inNum1 && (num1 !== "-" || num1 !== "-0.")){
             if(num1 === "0."){
