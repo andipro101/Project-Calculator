@@ -1,7 +1,6 @@
 const calculatorScreen = document.getElementById("calculator-screen")
 
 let inNum1 = true;
-let isMinus = false;
 let num1 = "0";
 let num2 = "0";
 let operator = "";
@@ -10,9 +9,36 @@ calculatorScreen.value = "0"
 
 function appendToDisplay(input){
     
+    if(input === "-" && (num1 === "0" || num1 === "0.")){
+        if(inNum1 && (num1 !== "-" || num1 !== "-0.")){
+            if(num1 === "0."){
+                num1 = "-" + num1;
+            }
+            else{
+                num1 = "-"
+            }
+            calculatorScreen.value =num1;
+            return;
+        }
+    }
+    else if (input === "-" && operator !== "" && !inNum1 && (num2 === "0" || num2 === "0.")){
+        if(num2 !== "-0" || num2 !== "-0."){
+            if(num2 === "0."){
+                num2 = "-" + num1;
+            }
+            else{
+                num2 = "-"
+            }
+            calculatorScreen.value =num1;
+            return;
+        }
+    }
+
+
+
     if(input === "="){ /// calculate
         num1 = calculate(operator,num1,num2);
-        num2 = "";
+        num2 = "0";
         operator = ""
         return;
     }
@@ -47,6 +73,17 @@ function updateScreen(input){
             }
             calculatorScreen.value = num1
         }
+        else if (num1 === "-"){
+            if (input === "."){
+                num1 = "-0."
+
+            }
+            else{
+                num1 = "-" + input
+            }
+            calculatorScreen.value = num1
+        }
+        
         else{
             num1 += input;
             calculatorScreen.value = num1
@@ -59,6 +96,16 @@ function updateScreen(input){
             }
             else{
                 num2 = input;
+            }
+            calculatorScreen.value = num2
+        }
+        else if (num2 === "-"){
+            if (input === "."){
+                num2 = "-0."
+
+            }
+            else{
+                num2 = "-" + input
             }
             calculatorScreen.value = num2
         }
