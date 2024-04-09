@@ -20,10 +20,11 @@ html, body {
     flex-direction: column;
     justify-content:end;
     align-items: center;
-    background-color: #e2cba7;
+    background-color: #d2bc82;
     height: 490px;
     width: 310px;
     border-radius: 30px 30px 15px 15px;
+    border: 2px solid black;
 
 }
 /* screen */
@@ -59,6 +60,7 @@ html, body {
 
 .calculator-logo img{
     margin-left: 40px;
+    height: 35px;
 }
 
 .calculator-logo h1{
@@ -114,7 +116,7 @@ html, body {
 .buttons .button-row-two #button-multiplication,
 .buttons .button-row-three #button-subtraction,
 .buttons .button-row-four #button-addition{
-    background-color: #e2cba7;
+    background-color: #d4c29e;
 
 }
 
@@ -153,4 +155,5 @@ html, body {
 
 button{
     font-size: 20px;
+    background-color: #f2efdc;
 }
