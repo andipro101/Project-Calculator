@@ -54,7 +54,7 @@ html, body {
     height: 40px;
     border-bottom: 3px solid grey;
     align-items: center;
-    justify-content:space-between;
+    justify-content:end;
 
 }
 
